@@ -1,0 +1,270 @@
+body,html{
+     font-size: 14px;
+     color: rgb(100,100,100);
+     font-family: 'Maitree', serif;
+     width: 100%;
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+     overflow-x: hidden;
+}
+li{
+     font-family: 'Cambo', serif;
+}
+
+ul{
+     padding-left: 0;
+}
+
+#main{
+     margin: 0;
+     padding: 0;
+     width: 100%;
+}
+
+#brand{
+     color: #e6b800;
+}
+
+#home-header{
+     height: 100vh;
+     background-image: url("../pictures/landing.jpg");
+     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     color: white;
+}
+
+#title{
+     font-weight: 700;
+     font-size: 100px;
+     padding-top: 40vh;
+     padding-bottom: 5px;
+     border-bottom: 1px solid #e6b800;
+}
+
+#about-header{
+     background: rgb(35, 35, 35);
+     color: white;
+     padding-top: 200px;
+     padding-bottom: 200px;
+     border-width: 1px 0 1px 0 solid #e6b800;
+}
+
+#about-header h1{
+     margin: 0;
+}
+
+#about-title{
+     font-weight: 700;
+     font-size: 50px;
+     text-align: center;
+}
+
+#contact-div{
+     margin: 0;
+     padding-top: 25px;
+     padding-bottom: 25px;
+     background: black;
+     color : white;
+     width: 100%;
+}
+.container{
+     padding: 0;
+     margin: 0;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../pictures/image1.jpg');
+
+    /* half height */
+    height: 50vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('../pictures/image5.jpg');
+
+    /* half height */
+    height: 75vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Applies layer to darken div */
+.layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+li img{
+     padding-top: 30px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon1 span:nth-child(4) {
+  top: 36px;
+}
+
+#hamburger.open-hamburger span:nth-child(2) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#hamburger.open-hamburger span:nth-child(3) {
+  opacity: 0;
+  left: -60px;
+}
+
+#hamburger.open-hamburger span:nth-child(4) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+#school-header{
+     display: block;
+}
+
+.hide-object{
+     position: absolute;
+     opacity: 0;
+}
+
+.object-active{
+     position: static;
+     opacity: 1;
+     transition: opacity 1s linear;
+}
+
+
+#school-button{
+     text-align: center;
+     border-right: rgb(35, 35, 35);
+     border: 0 solid #e6b800;
+
+}
+#work-button{
+     text-align: center;
+}
+
+#projects-header{
+     background: #999999;
+     color: #333333;
+     margin: 0;
+     padding: 200px 0;
+}
+
+#projects-title{
+     margin: 0;
+     padding-bottom: 50px;
+     font-weight: 700;
+     font-size: 50px;
+}
+
+#contact-header{
+     margin: 0;
+     padding-bottom: 25px;
+     font-weight: 700;
+     font-size: 50px;
+}
+
+#social-networks{
+}
+
+.black-overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+.white-content {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  border: 16px solid #e6b800;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+
+.cursor{
+     cursor: pointer;
+}
+
+div#body.container{
+     margin: 0 auto;
+     padding: 0;
+}
+
+div#contact-div.navbar.navbar-default.navbar-bottom{
+     margin: 0;
+     padding: 0;
+}
+
+i.icon-size{
+     font-size: 60px;
+}
+
+.remove-bullet{
+     list-style: none;
+}
+
+.center {
+       &:hover {
+         color: $purple;
+    }
+
+     &::before,
+     &::after {
+       top: 0;
+       left: 0;
+       height: 100%;
+       width: 100%;
+       transform-origin: center; // Ensure scaling is done from the center (expands outwards)
+     }
+
+
+     &::before {
+       border-top: 2px solid $purple;
+       border-bottom: 2px solid $purple;
+       transform: scale3d(0,1,1); // Shrink only width
+     }
+}
